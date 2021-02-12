@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To Do List</title>
+		<link rel="stylesheet" type="text/css" href="todo.css">
+	</head>
+	<body>
+		<div class="header">
+	      <h2 style="margin:5px">To Do List</h2>
+	      <input type="text" id="myInput" placeholder="Your to - do list goes here">
+	      <audio id="myAudio">
+  			<source src="sound.mp3" type="audio/mpeg">
+		</audio>
+	      <span onclick="newElement();playAudio()" id="myAudio" class="addBtn">Add</span>
+   		</div>
+	    <ul id="myUL">
+	      <li>Make Pancakes</li>
+	      <li>Maggie</li>
+    	</ul>
+    	<button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
+    	<script src="todo.js"></script>
+	</body>
+</html>
